@@ -1,0 +1,42 @@
+﻿@model Candies.Models.Candy
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Candy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type_of_Candy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type_of_Candy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color_of_Candy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color_of_Candy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number_of_Candies)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number_of_Candies)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

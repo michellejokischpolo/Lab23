@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CandyModelStoreContainer" CdmEntityContainer="CandyEntities2">
+    <EntitySetMapping Name="Candies">
+      <EntityTypeMapping TypeName="CandyModel.Candy">
+        <MappingFragment StoreEntitySet="Candy">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type_of_Candy" ColumnName="Type of Candy" />
+          <ScalarProperty Name="Color_of_Candy" ColumnName="Color of Candy" />
+          <ScalarProperty Name="Number_of_Candies" ColumnName="Number of Candies" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

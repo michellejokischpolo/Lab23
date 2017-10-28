@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CandyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Candy">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type_of_Candy" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Color_of_Candy" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Number_of_Candies" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="CandyEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Candies" EntityType="Self.Candy" />
+  </EntityContainer>
+</Schema>
